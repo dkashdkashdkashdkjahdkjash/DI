@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/salonHabana"
+        android:tooltipText="asd"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/Nombre"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTitulo"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
+
+    <TextView
+        android:id="@+id/textViewTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/telefono"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:ems="10"
+        android:hint="@string/nombreHint"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextTelefono"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="21dp"
+        android:ems="10"
+        android:hint="@string/telefonoHint"
+        android:inputType="phone"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTelefono"
+        app:layout_constraintStart_toEndOf="@+id/textViewTelefono"
+        app:layout_constraintTop_toTopOf="@+id/textViewTelefono" />
+
+    <TextView
+        android:id="@+id/textViewDe1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/barra"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerDia"
+        app:layout_constraintStart_toEndOf="@+id/spinnerDia"
+        app:layout_constraintTop_toTopOf="@+id/spinnerDia" />
+
+    <TextView
+        android:id="@+id/textViewDe2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/barra"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinnerMes"
+        app:layout_constraintStart_toEndOf="@+id/spinnerMes"
+        app:layout_constraintTop_toTopOf="@+id/spinnerMes" />
+
+    <Spinner
+        android:id="@+id/spinnerDia"
+        android:layout_width="75dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTelefono"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTelefono" />
+
+    <Spinner
+        android:id="@+id/spinnerMes"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDe1"
+        app:layout_constraintStart_toEndOf="@+id/textViewDe1"
+        app:layout_constraintTop_toTopOf="@+id/textViewDe1" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDe2"
+        app:layout_constraintStart_toEndOf="@+id/textViewDe2"
+        app:layout_constraintTop_toTopOf="@+id/textViewDe2" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTipo"
+        app:layout_constraintStart_toStartOf="@+id/textViewTipo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipo">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/banquete" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jornada" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/congreso" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="135dp"
+        android:text="@string/tipo"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDe2"
+        app:layout_constraintStart_toEndOf="@+id/textViewDe1"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMes" />
+
+    <TextView
+        android:id="@+id/textViewCocina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/cocina"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDe2"
+        app:layout_constraintStart_toEndOf="@+id/textViewDe1"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMes" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupCocina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewCocina"
+        app:layout_constraintStart_toStartOf="@+id/textViewCocina"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCocina" >
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buf" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/carta" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cita_con_el_chef" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_precisa" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewPersonas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="275dp"
+        android:text="@string/personas"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewDe2"
+        app:layout_constraintStart_toStartOf="@+id/spinnerMes"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMes" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewPersonas"
+        app:layout_constraintStart_toStartOf="@+id/textViewPersonas"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPersonas" />
+
+    <TextView
+        android:id="@+id/textViewSeekBarInicio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_0"
+        app:layout_constraintEnd_toStartOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <TextView
+        android:id="@+id/textViewSeekBarFin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_99"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar"
+        app:layout_constraintStart_toEndOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/siguiente"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar"
+        app:layout_constraintStart_toStartOf="@+id/seekBar"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

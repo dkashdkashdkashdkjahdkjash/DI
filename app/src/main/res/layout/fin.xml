@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/salonHabana"
+        android:tooltipText="asd"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/Nombre"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewTitulo"
+        app:layout_constraintHorizontal_bias="0.194"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
+
+    <TextView
+        android:id="@+id/textViewTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/telefono"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textViewFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/fecha"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTelefono"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTelefono" />
+
+    <TextView
+        android:id="@+id/textViewTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/tipo"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewFecha"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFecha" />
+
+    <TextView
+        android:id="@+id/textViewCocina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/cocina"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTipo"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipo" />
+
+    <TextView
+        android:id="@+id/textViewPersonas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/persona"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCocina"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCocina" />
+
+    <TextView
+        android:id="@+id/textViewDias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/dias"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewPersonas"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPersonas" />
+
+    <TextView
+        android:id="@+id/textViewHabitaciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/habitaciones"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewDias"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDias" />
+
+    <TextView
+        android:id="@+id/textViewNombreD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75dp"
+        android:text="@string/Nombre"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textViewTelefonoD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/telefono"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewNombreD"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNombreD" />
+
+    <TextView
+        android:id="@+id/textViewFechaD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/fecha"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTelefonoD"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTelefonoD" />
+
+    <TextView
+        android:id="@+id/textViewTipoD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/tipo"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewFechaD"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFechaD" />
+
+    <TextView
+        android:id="@+id/textViewCocinaD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/cocina"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewTipoD"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipoD" />
+
+    <TextView
+        android:id="@+id/textViewPersonasD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/persona"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewCocinaD"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCocinaD" />
+
+    <TextView
+        android:id="@+id/textViewDiasD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/dias"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewPersonasD"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPersonasD" />
+
+    <TextView
+        android:id="@+id/textViewHabitacionesD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/habitaciones"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewDiasD"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDiasD" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

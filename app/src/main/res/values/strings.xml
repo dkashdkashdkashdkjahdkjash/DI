@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Practica 3 DI</string>
+    <string name="salonHabana">Salón Habana</string>
+    <string name="Nombre">Nombre:</string>
+    <string name="telefono">Telefono:</string>
+    <string name="barra">/</string>
+    <string name="banquete">Banquete</string>
+    <string name="jornada">Jornada</string>
+    <string name="congreso">Congreso</string>
+    <string name="tipo">Tipo:</string>
+    <string name="cocina">Cocina:</string>
+    <string name="buf">Bufé</string>
+    <string name="carta">Carta</string>
+    <string name="cita_con_el_chef">Cita con el chef</string>
+    <string name="no_precisa">No precisa</string>
+    <string name="personas">Personas: 1</string>
+    <string name="_0">0</string>
+    <string name="_99">99</string>
+    <string name="telefonoHint">Telefono</string>
+    <string name="nombreHint">Nombre</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="fecha">Fecha:</string>
+    <string name="dias">Dias:</string>
+    <string name="habitaciones">Habitaciones:</string>
+    <string name="persona">Personas:</string>
+</resources>
