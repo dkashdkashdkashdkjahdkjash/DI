@@ -13,6 +13,7 @@
         android:text="@string/salonHabana"
         android:tooltipText="asd"
         android:textSize="32sp"
+        android:fontFamily="cursive"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,6 +25,7 @@
         android:layout_marginTop="36dp"
         android:text="@string/Nombre"
         android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed-light"
         app:layout_constraintEnd_toEndOf="@+id/textViewTitulo"
         app:layout_constraintHorizontal_bias="0.194"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,6 +38,7 @@
         android:layout_marginTop="32dp"
         android:text="@string/telefono"
         android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed-light"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -46,6 +49,7 @@
         android:layout_marginTop="32dp"
         android:text="@string/fecha"
         android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed-light"
         app:layout_constraintStart_toStartOf="@+id/textViewTelefono"
         app:layout_constraintTop_toBottomOf="@+id/textViewTelefono" />
 
@@ -55,6 +59,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/tipo"
+        android:fontFamily="sans-serif-condensed-light"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/textViewFecha"
         app:layout_constraintTop_toBottomOf="@+id/textViewFecha" />
@@ -66,6 +71,7 @@
         android:layout_marginTop="32dp"
         android:text="@string/cocina"
         android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed-light"
         app:layout_constraintStart_toStartOf="@+id/textViewTipo"
         app:layout_constraintTop_toBottomOf="@+id/textViewTipo" />
 
@@ -76,6 +82,7 @@
         android:layout_marginTop="32dp"
         android:text="@string/persona"
         android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed-light"
         app:layout_constraintStart_toStartOf="@+id/textViewCocina"
         app:layout_constraintTop_toBottomOf="@+id/textViewCocina" />
 
@@ -85,6 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/dias"
+        android:fontFamily="sans-serif-condensed-light"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/textViewPersonas"
         app:layout_constraintTop_toBottomOf="@+id/textViewPersonas" />
@@ -96,6 +104,7 @@
         android:layout_marginTop="32dp"
         android:text="@string/habitaciones"
         android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed-light"
         app:layout_constraintStart_toStartOf="@+id/textViewDias"
         app:layout_constraintTop_toBottomOf="@+id/textViewDias" />
 
@@ -106,6 +115,7 @@
         android:layout_marginStart="75dp"
         android:text="@string/Nombre"
         android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed-light"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toTopOf="@+id/textView" />
@@ -117,6 +127,7 @@
         android:layout_marginTop="32dp"
         android:text="@string/telefono"
         android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed-light"
         app:layout_constraintStart_toStartOf="@+id/textViewNombreD"
         app:layout_constraintTop_toBottomOf="@+id/textViewNombreD" />
 
@@ -126,6 +137,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/fecha"
+        android:fontFamily="sans-serif-condensed-light"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/textViewTelefonoD"
         app:layout_constraintTop_toBottomOf="@+id/textViewTelefonoD" />
@@ -137,6 +149,7 @@
         android:layout_marginTop="32dp"
         android:text="@string/tipo"
         android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed-light"
         app:layout_constraintStart_toStartOf="@+id/textViewFechaD"
         app:layout_constraintTop_toBottomOf="@+id/textViewFechaD" />
 
@@ -146,6 +159,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/cocina"
+        android:fontFamily="sans-serif-condensed-light"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/textViewTipoD"
         app:layout_constraintTop_toBottomOf="@+id/textViewTipoD" />
@@ -157,6 +171,7 @@
         android:layout_marginTop="32dp"
         android:text="@string/persona"
         android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed-light"
         app:layout_constraintStart_toStartOf="@+id/textViewCocinaD"
         app:layout_constraintTop_toBottomOf="@+id/textViewCocinaD" />
 
@@ -166,6 +181,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/dias"
+        android:fontFamily="sans-serif-condensed-light"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/textViewPersonasD"
         app:layout_constraintTop_toBottomOf="@+id/textViewPersonasD" />
@@ -176,6 +192,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/habitaciones"
+        android:fontFamily="sans-serif-condensed-light"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="@+id/textViewDiasD"
         app:layout_constraintTop_toBottomOf="@+id/textViewDiasD" />

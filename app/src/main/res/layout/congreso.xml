@@ -12,7 +12,7 @@
         android:layout_marginTop="32dp"
         android:text="@string/salonHabana"
         android:textSize="32sp"
-        android:tooltipText="asd"
+        android:fontFamily="cursive"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +23,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="@string/dias"
+        android:tooltipText="Dias aqui"
         android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed-light"
         app:layout_constraintEnd_toEndOf="@+id/textViewTitulo"
         app:layout_constraintStart_toStartOf="@+id/textViewTitulo"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitulo" />
@@ -34,7 +36,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="96dp"
         android:text="@string/habitaciones"
+        android:tooltipText="Habitaciones aqui"
         android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed-light"
         app:layout_constraintEnd_toEndOf="@+id/textViewTitulo"
         app:layout_constraintStart_toStartOf="@+id/textViewTitulo"
         app:layout_constraintTop_toTopOf="@+id/textViewDias" />

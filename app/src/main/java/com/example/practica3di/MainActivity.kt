@@ -1,10 +1,12 @@
 package com.example.practica3di
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.SeekBar
+import android.widget.Spinner
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -35,8 +37,14 @@ class MainActivity : AppCompatActivity() {
         radioGroupCocina = findViewById(R.id.radioGroupCocina)
 
         radioGroupTipo.setOnCheckedChangeListener { _, selectedRadioButtonId ->
-            tipo = selectedRadioButtonId.toString()
-            if (selectedRadioButtonId.toString() == "Congreso"){
+            if (selectedRadioButtonId == R.id.radioButton3){
+                tipo = "Banquete"
+            }
+            if (selectedRadioButtonId == R.id.radioButton2){
+                tipo = "Jornada"
+            }
+            if (selectedRadioButtonId == R.id.radioButton){
+                tipo = "Congreso"
                 contador = 1
             }else{
                 contador = 0
@@ -44,7 +52,18 @@ class MainActivity : AppCompatActivity() {
         }
 
         radioGroupCocina.setOnCheckedChangeListener { _, selectedRadioButtonId ->
-            cocina = selectedRadioButtonId.toString()
+            if(selectedRadioButtonId == R.id.radioButton7){
+                cocina = "Bufé"
+            }
+            if(selectedRadioButtonId == R.id.radioButton6){
+                cocina = "Carta"
+            }
+            if(selectedRadioButtonId == R.id.radioButton5){
+                cocina = "Cita con el chef"
+            }
+            if(selectedRadioButtonId == R.id.radioButton4){
+                cocina = "No precisa"
+            }
         }
         seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             /**
@@ -55,7 +74,7 @@ class MainActivity : AppCompatActivity() {
              */
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 // Actualiza el TextView mientras se mueve la SeekBar
-                personas.text = "Personas: $progress"
+                personas.text = progress.toString()
             }
 
             /**
@@ -75,9 +94,21 @@ class MainActivity : AppCompatActivity() {
 
         boton.setOnClickListener{
             if(contador == 1){
-
+                val intent1 = Intent(this, Congreso::class.java)
+                intent1.putExtra("Nombre",nombre.text.toString())
+                intent1.putExtra("telefono",telefono.text.toString())
+                intent1.putExtra("tipo",tipo.toString())
+                intent1.putExtra("cocina",cocina.toString())
+                intent1.putExtra("personas",personas.text.toString())
+                startActivity(intent1)
             }else{
-
+                val intent2 = Intent(this, Fin::class.java)
+                intent2.putExtra("Nombre",nombre.text.toString())
+                intent2.putExtra("telefono",telefono.text.toString())
+                intent2.putExtra("tipo",tipo.toString())
+                intent2.putExtra("cocina",cocina.toString())
+                intent2.putExtra("personas",personas.text.toString())
+                startActivity(intent2)
             }
         }
     }
