@@ -3,6 +3,7 @@ package com.example.practica3di
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.CalendarView
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.SeekBar
@@ -30,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         var tipo = ""
         var cocina = ""
         var contador = 0
+        var fecha = ""
 
         val boton = findViewById<Button>(R.id.button)
 
@@ -92,6 +94,11 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
+        var calendario = findViewById<CalendarView>(R.id.calendarView4)
+        calendario.setOnDateChangeListener(CalendarView.OnDateChangeListener { view, year, month, dayOfMonth ->
+            val mes = month + 1
+            fecha = ("$dayOfMonth/$mes/$year")
+        })
         boton.setOnClickListener{
             if(contador == 1){
                 val intent1 = Intent(this, Congreso::class.java)
@@ -100,6 +107,7 @@ class MainActivity : AppCompatActivity() {
                 intent1.putExtra("tipo",tipo.toString())
                 intent1.putExtra("cocina",cocina.toString())
                 intent1.putExtra("personas",personas.text.toString())
+                intent1.putExtra("fecha",fecha.toString())
                 startActivity(intent1)
             }else{
                 val intent2 = Intent(this, Fin::class.java)
@@ -108,6 +116,7 @@ class MainActivity : AppCompatActivity() {
                 intent2.putExtra("tipo",tipo.toString())
                 intent2.putExtra("cocina",cocina.toString())
                 intent2.putExtra("personas",personas.text.toString())
+                intent2.putExtra("fecha",fecha.toString())
                 startActivity(intent2)
             }
         }

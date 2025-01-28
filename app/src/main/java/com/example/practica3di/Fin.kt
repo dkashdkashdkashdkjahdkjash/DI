@@ -20,10 +20,12 @@ class Fin : AppCompatActivity(){
 
         nombre.text = intent.getStringExtra("Nombre")
         telefono.text = intent.getStringExtra("telefono")
-        fecha.text = ""
+        fecha.text = intent.getStringExtra("fecha")
         tipo.text = intent.getStringExtra("tipo")
         cocina.text = intent.getStringExtra("cocina")
         pesonas.text = intent.getStringExtra("personas")
+        dias.text = intent.getStringExtra("dias")
+        habitaciones.text = intent.getStringExtra("habitaciones")
     }
 
 }
